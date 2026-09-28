@@ -1,0 +1,68 @@
+Company:
+
+company teams:
+1. HR teams
+2. Managment
+3. IT teams
+4. Sales teams
+5. Marketing teams
+
+IT Team:
+1. Devloment Team
+2. Teating Team
+3. Opeartion Team
+4. Security
+5. Networking
+6. Devops 
+7. Project mangement
+8. Admin
+
+Types of company:
+1. Service based company
+--> eg: TCS, infosys, wipro, tech mahindra
+
+2. Product based company
+--> eg: Microsoft, Apple
+
+                                              Cloud
+
+1. min 4 servers 
+2. no of routers
+3. no of gateways
+4. cables
+5. AC 
+6. Electricity 24*7
+7. Min 5 employees
+8. min 30 days for setup
+
+Cloud Providers:
+1. AWS ---> 2006 ---> +200 services
+2. Microsoft Azure
+3. GCP
+
+Opearting system : Linux
+Cloud : AWS
+Devops : Git, Maven, Docker, Kuberenetes, Terraform, Ansible, Cloudwatch, Datadog, jenkins
+Azure
+GCP
+Shell Scripting
+Python
+
+                                            Devops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

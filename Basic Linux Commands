@@ -1,0 +1,104 @@
+                                       Basic Linux commands
+
+username @ hostname :~ $
+
+username = name of loogged in user
+hostname = Machine name
+:~ = directory name
+$ 0r # = user Types
+
+root user: #
+normal user: $
+
+**Command Format**
+
+<command>  <options>  <arguments>
+
+command: perform specific task
+options: filters
+arguments: specifing input like file/folder
+
+
+1. sudo su - / sudo -i 
+-->  this command is used to login into root account.
+syntax: sudo su -
+
+2. pwd : (Present Working Directory)
+--> current working directory
+syntax: pwd
+
+3. man man : (manual)
+--> to open manual
+syntax: man man
+--> type 'q' for quit
+
+4. ls : (list)
+--> to display current directory/folder contents
+i] syntax: ls
+ii] syntax: ls <folder_name>
+--> to displat specific folder/directory contents
+eg:  ls /etc
+
+5. mkdir: (make directory)
+--> to create directory/folder
+i] syntax: mkdir <folder_name>
+eg: mkdir demo
+
+--> using mkdir you can create multiplr directories
+ii] syntax: mkdir <folder1> <folder2>.....
+eg: mkdir folder1  folder2  folder3  folder4
+
+
+--> nested directory
+iii] mkdir -p parent_dir/child_dir
+eg: mkdir -p  dev/test
+
+
+6. clear / ctrl+l
+--> to clear screen
+syntax: clear
+
+7. rmdir : (remove directory)
+--> to remove empty directory
+syntax: rmdir <folder_name>
+eg: rmdir demo
+
+
+folder1/fruits
+folder2/fruits
+
+ls /fruits
+
+8. rm -rf:
+--> is used to delete non empty directory.
+syntax: rm -rf <dir_name>
+here,
+rm stands for Remove
+-r stands for Recursive
+-f stands for forecfully
+
+-r tells rm to recursively delete the directory and all its sub contents.
+"resursively means that the command will operate on a directory and all its sub directories and contents"
+eg: rm -rf  demo
+
+9. cd : Change Directory
+--> used to move between directories
+syntax: cd <dir_name>
+eg: cd demo
+
+10. touch :
+--> used to create empty file
+syntax: touch <file_name>
+eg: touch demo.txt
+
+11. cat :
+--> cat command is used to create file and write contents to it.
+syntax: cat > <file_name>
+eg: cat > test
+
+"type file contents and then use ctrl+d to save and exit"
+
+
+
+
+

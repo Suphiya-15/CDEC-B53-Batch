@@ -1,0 +1,62 @@
+                                        Linux Operating system
+
+Operating system:
+--> it is an interface between hardware and software.
+--> two ways to interact OS:
+1. CLI : Command Line Interface
+2. GUI : Graphical User Interface
+
+
+Linux:
+
+1964: Bell Lab, New Jersey
+    --> Multiuser-multitasking OS
+
+1969 --> Stop
+
+Dennis Ritchie and Ken Thompson
+
+1970's: UNICS OS
+
+1976: UNIX v6 
+
+    1. IBM AIX
+    2. SUN SOlaries
+    3. MAC OS
+    4. HP UX
+
+    1991 Linus Torvald ---> Freax --> Linux OS 
+
+    1. RHEL
+    2. Fedora
+    3. Debian
+    4. Other --> Ubuntu, CentOS, Kali Linux, amazon Linux, Open SUSE etc
+
+    **Why Linux:
+    1. Open Source
+    2. Security
+    3. Light Weight
+    4. porable
+    5. Community support
+    6. simplified updates
+
+    Questions:
+    1. Linux vs Windows
+    2. HW: Linux vs Unix
+    3. Linux Features
+
+    Based on utilization:
+    1. Desktop OS
+    2. Server OS
+
+    Desktop vs Server
+
+**Linux Architecture:
+Shell 
+Kernel
+
+Linux:
+1. Physically install
+2. Online --> 1. AWS
+              2. Labex.io <---- 
+
