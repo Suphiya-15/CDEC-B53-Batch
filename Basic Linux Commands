@@ -98,6 +98,68 @@ eg: cat > test
 
 "type file contents and then use ctrl+d to save and exit"
 
+12. mv : (move)
+--> mv command has two use cases:
+i] renaming a file:
+syntax: mv <file_old_name> <file_new_name>
+eg: mv demo dev
+
+ii] move a file:
+syntax: mv <source_nm> <destination>
+eg: mv  demo  folder
+
+13. cp : (copy)
+-->this command is used to copy file
+syntax:  cp  <source_file>  <destination>
+eg:  cp  demo folder
+
+14. cp -r :
+--> this command is used to copy dircetory
+syntax: cp -r  <folder_nm>  <destination>
+eg: cp -r  folder  new_folder
+
+15. head:
+--> used to display first few line (10 lines) of file
+syntax:  head  <file_name>
+eg: head  demo.txt
+
+16. tail:
+--> used to display last few lines (10 lines) of a file.
+syntax: tail <file_name>
+eg: tail demo.txt
+
+17. wc : (word count)
+--> it is used to find out no of lines, word count, character count.
+syntax: wc <file_name>
+eg: wc file.txt
+
+18. rm : remove
+--> to remove files
+syntax: rm <file_name>
+eg: rm demo.txt
+
+19. sort : 
+--> used to sorf a file
+syntax: sort <file_name>
+eg: sort file.txt
+
+20. uniq:
+--> used to delete all adjancent duplicate lines.
+syntax: uniq <file_name>
+eg: uniq file.txt
+
+21. pipe (|)
+--> a pipe is used to send output of one command as a input to another command
+syntax: command1 | command2
+eg: sort file.txt | uniq
+
+22. grep: 
+--> grep is used to search for a specific word or pattern inside files.
+syntax: grep <file_name>
+eg: grep demo.txt
+
+
+
 
 
 
