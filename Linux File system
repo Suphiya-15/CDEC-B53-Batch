@@ -1,0 +1,34 @@
+                               Linux File System
+
+--> it is a way linux organize and store files and directories on a disk.
+
+        Windows                                                     Linux
+        C:\                                                           /
+
+All configuration files are stored in                              
+        C:\Windows                                                  /etc
+
+home directory for users
+       c:\user                                                      /home      
+
+Installed software files
+    C:\program files                                                /usr (Unix system Resource) 
+                                                                       or 
+                                                                    /opt
+Temp files  
+     C:\temp                                                        /tmp 
+
+------------------------------------------------------------------------------------------------------
+
+/root : the root user directory
+/boot : contains files required during the system boot process
+POST : Power ON Self Test 
+/dev : linux represents many devices as files under /dev
+/mnt : temp location for mounting filesystem
+/media : (removable media) commonly used for automatically mounted removable devics.
+/var : (variable) logs and changing application data
+/srv : (service) data for services
+
+
+
+

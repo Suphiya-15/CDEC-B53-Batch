@@ -155,8 +155,15 @@ eg: sort file.txt | uniq
 
 22. grep: 
 --> grep is used to search for a specific word or pattern inside files.
-syntax: grep <file_name>
-eg: grep demo.txt
+syntax: grep options "pattern" <file_name>
+eg: grep -i "rose" demo.txt
+
+options:
+-i : ignore case
+-n : show line numbers
+-E : find multiple words
+
+
 
 
 

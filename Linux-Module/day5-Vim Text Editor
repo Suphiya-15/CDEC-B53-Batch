@@ -1,0 +1,26 @@
+                                         Text Editor
+
+--> A text editor is software/program used to create, edit and save text files.
+-->common text editors: vim , vi , nano, atom etc
+
+vi : Visual Interface
+--> it is oldest and most commonly available linux editor.
+
+vim : Vi IMporoved
+--> it is improved version of vi with many additional features.
+--> vim is a mode based editor
+--> vim modes:
+1. Normal Mode :
+--> when you open vim. you are in normal mode. use 'esc' to enter in normal mode from any other mode.
+
+2. Insert Mode:
+--> insert mode is where you type text or edit text. use 'i' to enter normal mode.
+
+3. Command line/execute Mode:
+--> here you execute commands. use ':' to enter commands
+
+4. Visual mode:
+--> select text. to enter this mode 'v'
+
+
+
