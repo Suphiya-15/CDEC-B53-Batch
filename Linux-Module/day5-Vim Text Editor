@@ -23,4 +23,75 @@ vim : Vi IMporoved
 --> select text. to enter this mode 'v'
 
 
+*syntax to open file:
+
+vim  <file_name>
+vim  demo.txt
+
+*saving and qutting:
+
+1. saving a file= :w and press enter
+2. exiting vim= :q and enter
+--> if you have unsaved changes you will need to use ':q!' to force quit.
+3. save and exit= :wq and enter
+
+:set nu= show line numbers
+:set nonu= hide line numbers
+
+*cursor movemnt shortcuts
+
+h = move left
+j = move down
+k = move up
+l = move right
+   or
+use arrow keys
+
+shift+h = H = move  to the top of the screen
+shift+m = M = move to the middle of the screen
+shift+l = L = move to the bottom of the screen
+
+gg = move to the beginning of the file
+shift+g = move to the end of the file
+<n>gg = move to the nth line of file
+
+*search and replace
+
+forward search = top to bottom
+syntax= /<word>
+eg= /AWS
+
+backword search = bottom to top
+syntax= ?<word>
+eg= ?AWS
+
+replace syntax=  :%s/<old_word>/<new_word>/g
+--> this command is used to globally replace the old_word with new_word
+eg= :%s/AWS/Microsoft azure/g
+
+HW:
+1. replace single occurance
+2. replace single occurance defined on number line
+
+*undo and redo
+
+u = to undo last change
+ctrl+r = to redo the changes
+
+*commands to enter in Insert mode:
+
+i = insert text at the current cusror position
+shift+i = insert text at the beginning of the line
+a = append text after the current cursor position.
+shift+a = append text at the end of the line.
+o = open a new line below the current line
+shift+o = open a new line above the current line
+r = replace a single character
+R = replace multiple characters
+
+
+
+
+
+
 
