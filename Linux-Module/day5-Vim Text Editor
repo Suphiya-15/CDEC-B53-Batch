@@ -89,6 +89,35 @@ shift+o = open a new line above the current line
 r = replace a single character
 R = replace multiple characters
 
+**Delete , cut , copy and paste
+
+dd = delete current line
+<n>dd = delete n lines from the current line
+dw = delete word
+<n>dw = delete n words from current word
+
+cc = cut the current line
+<n>cc = cut n lines
+cw = cut word
+<n>cw = cut n words
+
+p = paste the cut/copied text
+<n>p = paste n times 
+
+yy = copy the current line
+<n>yy = copy n lines
+yw = copy word
+<n>yw = copy n words
+
+**visual mode
+u = convert text to lower case
+shift+u = convert text to upper case
+~ = convert lowecase to upper case and vice versa
+y = for copy
+c = for cut
+d = for delete
+
+
 
 
 

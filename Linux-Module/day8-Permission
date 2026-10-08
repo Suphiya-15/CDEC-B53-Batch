@@ -1,0 +1,130 @@
+                                   permission
+
+"In Linux everything is a file"
+
+**Types of files:
+1. Regular file: (-)
+2. Directory file: (d)
+3. Special files:
+--> Block file: (b)
+--> Character files: (c)
+---> Link files: (l)  <--
+--> socket file: (s)
+--> Pipe file: (p)
+
+
+-->permission means deciding who can access a file or directory and what they are allowed to do with it.
+
+**Types of linux permission:
+--> linux has basic 3 permissions
+1. read = r 
+2. write = w
+3. execute = x             rwx rwx rwx
+
+**who gets the permission:
+--> linux divides users into three catagories:
+1. owner/user = u
+2. group = g
+3. others = o
+
+syntax:
+
+ll <file_name>
+ls -l <file_name>
+ls -ltr <file_name>
+---> is used to check file permission
+ll demo.txt
+
+-   rw-   r--   r--   1    root    root    0    Oct  8 11:16    demo
+1    2    3     4     5     6       7      8       9             10
+
+1 : type of file
+2 : owner permission
+3 : group permission
+4 : other permiision
+5 : link count
+6 : file/dir owner
+7 : file/dir group
+8 : size of file
+9 : file creation date and time
+10 : file/dir name
+
+**there are two common ways:
+1. symbolic method
+2. octal/number method
+
+for permission the command used is:
+
+chmod = change mode
+
+1. symbolic method:
+
+**syntax:
+
+chmod <who><operator><permission> <file_name>
+eg: chmod g+w demo.txt
+
++ : add permission
+- : remove permission
+= : set exact permission
+
+u = user/owner
+g = group
+o = others
+a/ugo = all
+ug
+go
+uo
+
+chmod u+r u+w u+x 
+      u+rw u+wx u+rx u+rwx
+      u-r  u-w  u-x
+      u=r  u=w  u=x .......   <file_name>
+
+chmod u=- <filename>
+---
+
+chmod u+r <file_name>
+r--
+
+chmod u+w <file_name>
+rw-
+
+chmod u-rw <file_name>
+---
+
+chmod u=rwx <file_name>
+rwx
+
+
+
+**2. Numrical method:**
+
+read = r = 4
+write = w = 2
+execute = x = 1
+no permission = 0
+
+rw-r-xr--
+
+owner: rw-
+     : 4+2+0 
+     : 6
+
+group: r-x
+     : 4+0+1
+     : 5
+
+others: r--
+      : 4+0+0
+      : 4
+
+
+chmod 654 <file_name>
+
+chmod 777 <file_name>
+--> rwxrwxrwx
+
+r-x r-- rwx  : 547  
+
+400 : r--------

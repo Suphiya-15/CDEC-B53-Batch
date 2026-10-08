@@ -1,0 +1,78 @@
+                                        User Management
+
+--> users help linux control who can access what and what they are allowed to do.
+--> Types of users in Linux:
+
+1. Root user:
+--> the root user/super user is the administrator of Linux.
+--> root user has almost complete control over the system.
+
+2. Standard user:
+--> A standard user is create for a human.
+--> they  have liited permission compared to root account.
+eg: seema, atul etc
+
+3. System user:
+--> system user is a user created by system rather than a regular users who used to run background processes and services
+
+adduser/useradd <username>
+--> used to create standard user
+adduser seema
+
+**Important files:
+
+1. /etc/passwd : store all user information
+2. /etc/shells : store all system supported shell list
+3. /etc/shadow : store all user passswords
+
+**User Information:
+seema  :  x  :  1000  :  1000  :  seema patil,101,,  :  /home/seema  :  /bin/bash
+  1       2      3         4             5                 6                7
+
+  1 : User name
+  2 : password
+  3 : user ID
+  4 : Group ID
+  5 : User Information
+  6 : User's home directory
+  7 : Shell type 
+
+  usermod -u <new_uid> <user_name>
+  --> used to change user id of user
+  usermod -u 7001 seema
+
+  usermod -g <new_gid> <user_name>
+  --> used to change group id of user
+  usermod -g 1001 seema
+
+  usermod -c "comment" <user_name>
+  --> used to modify user information
+  usermod -c "seema patil, 101, 0123456789, Mumbai, devops engg" seema
+
+  usermod -d <new_directory> <user_name>
+  --> used to change users working directory
+  usermod -d /mnt seema
+
+  usermod -s <new_shell> <user_name>
+  --> used to change shell type of user
+  usermod -s /bin/sh seema
+
+  usermod -l <new_user_name> <old_user_name>
+  --> to rename user name
+  usermod -l seema1 seema
+
+ passwd <user_name>
+ --> to change user password
+ passwd seema
+
+ passwd
+ --> if user want to change its own password
+
+ **There are reserved uid:
+ 0 : root
+ 1 - 999 : system users
+ 1000=> : standard user
+
+ 
+
+ 

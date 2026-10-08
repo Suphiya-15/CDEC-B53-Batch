@@ -1,0 +1,49 @@
+                                        Group Management
+
+--> in linux group help us organize users and set permission for specific resources.
+--> we can control access based on the group
+
+groupadd <group_name>
+--> to create group
+groupadd aws
+
+groupdel <group_name>
+--> to delete group
+groupdel aws
+
+/etc/group = stored group related information
+
+/etc/group file contains:
+
+aws  :  x  :  5003  :  
+ 1      2       3     4
+
+ 1 : group name
+ 2 : group password
+ 3 : group ID
+ 4 : list of group members
+
+ **Type of groups:
+ 1. Primary group
+ --> the user's main/default group
+ 2. Secondary group
+ --> additional groups the user belongs to
+
+ usermod -aG <group_name> <user_name>
+ --> append single user
+ usermod -aG aws seema
+
+ gpasswd -M <user1>,<user2>,<user3>....  <group_name>
+ --> to add multiple users at a time
+ gpasswd -M priya,atul aws
+
+ gpasswd -d <user_name> <group_name>
+ --> to delete user from group
+ gpasswd -d amit aws
+
+ groupmod -n <group_new_name> <old_group_name>
+ --> to update group name
+ groupmod -n devops aws
+
+ 
+
