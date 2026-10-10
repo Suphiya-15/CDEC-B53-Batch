@@ -1,0 +1,95 @@
+                                Archiving and compression
+
+1. Archiving:
+--> archving means combning multiple files and directories into a single file.
+--> it is used to organize data efficiently, especially dealing with backups or data transfer.
+
+tar command: 
+--> It is short for Tape ARchive
+--> this command is used to create and extract archive file.
+syntax:
+
+tar <options> <archive_filename> <file or dir to be archived>
+
+options:
+-c : create archive file
+-f : file name
+-v : verbose mode
+-t : list the contents of an archive file
+-x : extract
+-C : extract file to another location
+
+du -sh : (Disk Usage) 
+--> to check out size of directory
+du -sh <dir_name>
+
+
+To create archive file:
+tar -cvf newetc.tar /etc
+
+to extract file:
+tar -xvf newetc.tar
+
+to check contents of file:
+tar -tvf newetc.tar
+
+to extract at another location:
+tar -xvf newetc.tar -C /mnt
+
+
+**Compression**:
+--> compression, reduces the size of file to save disk space and speed up data transfer.
+
+--> tools for compression:
+1. gzip
+2. bzip2
+3. xz
+
+--> compression ratio     time
+
+1. gzip: compression
+syntax: gzip <file_name>
+i/p : gzip new.tar
+o/p : new.tar.gz
+
+gunzip : decompression
+syntax: gunzip <compressed_file>
+i/p: gunzip new.tar.gz
+o/p: new.tar
+
+2. bzip2: compression
+syntax: bzip2 <file_name>
+i/p: bzip2 new.tar
+o/p : new.tar.bz2
+
+bunzip2: decompression
+syntax: bunzip2 <compressed_filename>
+i/p: bunzip2 new.tar.bz2
+o/p: new.tar
+
+3. xz : compression
+syntax: xz <file_name>
+i/p: xz new.tar
+o/p: new.tar.xz
+
+unxz : decompression
+syntax: unxz <file_name>
+i/p: unxz new.tar.xz
+o/p: new.tar
+
+you can use compression tools with tar command
+gzip:
+option: -z 
+extension: .gz
+
+tar -czvf newetc.tar.gz /etc
+
+bzip2:
+option: -j
+extension: .bz2
+
+xz:
+option: -J
+extension: .xz
+
+

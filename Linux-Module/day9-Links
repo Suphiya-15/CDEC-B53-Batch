@@ -1,0 +1,40 @@
+                                              Links in linux
+
+--> A link is just another name/path that points to the same data on disk.
+--> A link count in linux shows how many names points to the same file.
+--> link count of a file tells the total number of links a file has.
+
+--> Inode: (Index Node)
+----> it is a data structure in linux which stores information about files.
+eg: inode number: it is uniquly existing number for all the files in linux.
+file permission, owner, file size, data location etc
+---->**it does not store file's name or its actual contents**
+
+
+
+--> type of link 
+1. Hard Link 
+2. Soft Link 
+
+1. Hard Link :
+--> These links have actual file contents.
+syntax:  ln original_file  link_name
+eg: ln demo.txt hardlink
+
+--> hard link file is assigned the same inode value as the original file cz they refer the
+ same physical location.
+--> removing link just reduces the link count , but does not affect other links or original file.
+--> deleting the original file will not affect other links.
+
+2. soft link :
+--> soft link contains the parh of original file.
+--> inode no is difffent from original number
+--> deletting the original file, the softlink becomes "dangling" link which points to the non-existing file.
+
+
+
+
+$200 --> 20k --> 180 days 
+
+
+
