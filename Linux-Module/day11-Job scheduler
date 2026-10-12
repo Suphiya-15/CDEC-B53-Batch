@@ -1,0 +1,70 @@
+                                    
+                                    Job Scheduler
+
+-->A job Scheduler is tool that automatically execute a task at a specific time, on a perticular
+date or at regular interval.
+
+-->Crontab/cronJob
+
+1. cron : runs scheduled commands and scripts
+2. crontab: cron table 
+--> it contains the schedule entries that tell cron what to run and when
+
+crontab:
+-->  a crontab is a file containing scheduled tasks.
+syntax:
+
+*  *  *  *  *  commands
+1  2  3  4  5
+
+1. Minute (0 - 59)
+2. Hour (0 - 23)
+3. Day of month (1 - 31)
+4. Month (1 - 12)
+5. Day of week (0 - 6) 
+
+eg:
+
+30  9  *  *  *  mkdir demo
+15 *  *  *  *  touch test.txt 
+45  11  31  *  *   rm  backup*
+
+
+crontab -e : (edit)
+--> to set or edit jobs
+
+crontab -l : (list)
+--> to list all scheduled jobs
+
+crontab -r : (remove)
+--> to delete all schedule jobs
+
+command to install crontab on amazon linux:
+yum install cronie -y
+systemctl start crond.service
+
+
+                                  Find Command
+
+syntax:
+
+find  <location>  <options>  <expression>
+
+here,
+location: where to find file. (/ or /home)
+option: filters
+expression: actions to perform on matching results.
+
+options:
+1. -name : by name
+2. -perm : by permission
+3. -size : by size
+4. -uid/gid
+5. -user
+6. -mtime
+eg:
+
+find / -name demo.txt 
+
+
+
