@@ -1,0 +1,62 @@
+                                Process and job management
+
+process:
+--> A process is a program that is currently running.
+--> A process is a program in execution
+--> A process is a running instance of a program.
+
+**Types of process:
+1. Foreground process:
+--> A foreground process runs with control of your terminal.
+--> the shell normally waits for it to finish before giving you the next prompt.
+
+2. background process:
+--> A background process runs without occupying the terminal, allowing you to enter other commands.
+
+3. Daemon process:
+--> A daemon process that runs as a background service, typocally provide a system or application function.
+eg: sshd, crond
+
+
+
+
+
+**Process States:
+1. Running State (R)
+2. Sleeping/waiting (S or D)
+3. Stopped (T)
+4. Zombie (Z) 
+--> A Zombie is a process that has already finished but still has an entry in the process table
+because its parent has not yet collected its exit status.
+
+parent and child process:
+--> In linux, one process can create another process. the process that creates another process
+is called parent process.
+--> and the newly created process is called the child process.
+
+pstree command: 
+--> it displays processes in a tree structure, making it easy to see parent-child relationship.
+
+Process Priorities:
+nice and renice values
+--> processes have assigned priorities, which dictate the order in which they are executed by the CPU.
+this priority is managed by the nice and renice values.
+--> nice and renice values are used to manage(set or change) process priotities.
+
+-20 : most priority
+20 : least priority
+
+--> the lower the no more priority that task gets.
+--> lower nice value = higher scheduling preference
+--> higher nice value = lower scheduling preference
+sleep 100  9
+sleep 60  -18
+
+nice -n <priority-number> commmand
+--> to set process priorities
+nice -n  -15  sleep 100
+
+renice -n <priority-number> <pid>
+--> to change process priorities
+renice -n 10 1133
+

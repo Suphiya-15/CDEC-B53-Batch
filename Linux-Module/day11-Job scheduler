@@ -66,5 +66,7 @@ eg:
 
 find / -name demo.txt 
 
+find /mnt -mtime 7 
+
 
 

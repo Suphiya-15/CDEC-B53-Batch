@@ -1,0 +1,25 @@
+                                       Networking
+
+-->A network is a group of two or more devices connected togather to communicate and share resources.
+
+*Types of Networks:
+1. LAN: Local Area Network
+2. MAN: Metropolitan Area Network
+3. WAN: Wide Area Network 
+
+*protocol:
+--> A protocol  is a set of rules that devices follow to communicate with each other over a network.
+eg: HTTP, HTTPs, FTP, SSH, SMTP, IP etc
+
+*Network Devices:
+1. router
+2. switch
+3. Modem
+4. firewall
+5. NIC
+
+*IP address:
+--> an IP addresss is a logical address assigned to the device for communication purpose.
+--> types of IP address:
+1. Public IP address
+2. Private IP address
