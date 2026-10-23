@@ -1,0 +1,21 @@
+
+** Umask: User File Creation Mode Mask
+
+--> umask helps us decide which permisiion should be removed by default when new file or  directory
+is created.
+default maximum file permission : 666 : rw-rw-rw-
+default maximum directory permission : 777 : rwxrwxrwx
+
+file : 6 6 6
+umask: 0 2 2
+      -------
+       6 4 4 
+
+dir  :  7 7 7
+umask:  0 2 2
+   ------------
+        7 5 5   rwxr-xr-x
+
+
+666-000 : 666
+

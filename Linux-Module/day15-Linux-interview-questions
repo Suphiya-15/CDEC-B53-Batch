@@ -1,0 +1,28 @@
+Linux Interview Questions
+1. what is linux? what are its main features?
+2. what is linux kernel?
+3. what is shell in linux??
+4. what are some common shells in linux?
+5. how do you create a new user in linux?
+6. what is root user in linux?
+7. how do you change file permission in linux?
+8. what is process?
+9. how do you view active processes in linux?
+10. what is the purpose of crontab inn linux?
+11. /etc/passwd file purpose?
+12. explain use of VIM editor?
+13. use of tail command?
+14. what  is package manager in linux?
+15. grep command?
+16. what are inodes in linux?
+17. what does ls -ltr do?
+18. cd vs pwd
+
+19. how to find files larger than 10MB?
+20. how do you identify the process consuming the most CPU?
+21. how do you check disk usage?
+22. how do you check folder size?
+23. how do you  kill a process?
+
+
+rw-r--r-x       mkdir -p grandparent/parent/child   rwxr--r-x  -j
